@@ -6,6 +6,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // Cambia 'nombre-de-tu-repo' por el nombre real de tu repositorio en GitHub
-  base: '/valdes/', 
+  // Esta línea es la clave:
+  base: '/Valdes/', 
 });
