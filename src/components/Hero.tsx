@@ -51,7 +51,7 @@ export default function Hero() {
       >
         <video 
           ref={videoRef}
-          src="/ocean.mp4" 
+src={`${import.meta.env.BASE_URL}ocean.mp4`}
           autoPlay loop muted playsInline 
           className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
         />
