@@ -90,7 +90,7 @@ export default function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <img 
-            src="/logo.png" 
+src={`${import.meta.env.BASE_URL}logo.png`}
             alt="Valdés Logo" 
             className="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-105 transition-transform duration-500" 
             referrerPolicy="no-referrer" 
