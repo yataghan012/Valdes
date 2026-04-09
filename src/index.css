@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Maiandra GD';
+  src: url('/MAIAN.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-trench: #0A1118;
+  --color-coastal: #1B305B;
+  --color-slate-light: #E2E8F0;
+  --color-copper: #B36B39;
+  --color-coral: #FF7E67;
+  --color-thumb: #1E293B;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-brand: "Maiandra GD", "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-slate-light);
+    background-color: var(--color-trench);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-brand);
+  }
+
+  /* Custom Selection */
+  ::selection {
+    background-color: var(--color-copper);
+    color: #ffffff;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-trench);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-thumb);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-copper);
+  }
+}
+
+/* Noise Overlay Utility */
+.bg-noise {
+  position: relative;
+}
+.bg-noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.04;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Salt Crust Text Effect */
+.salt-crust {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.4'/%3E%3C/svg%3E"), #E2E8F0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Wet-Stone CTA Button */
+.wet-stone-btn {
+  background: linear-gradient(145deg, rgba(27, 48, 91, 0.9) 0%, rgba(10, 17, 24, 0.95) 100%);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.15), 0 10px 30px rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+}
+.wet-stone-btn:hover {
+  background: linear-gradient(145deg, rgba(34, 60, 114, 0.9) 0%, rgba(13, 21, 28, 0.95) 100%);
+  border-color: var(--color-copper);
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.2), 0 15px 40px rgba(0,0,0,0.6), 0 0 20px rgba(179, 107, 57, 0.2);
+}
+
+/* Blueprint Grid */
+.bg-blueprint {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
