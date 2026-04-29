@@ -54,7 +54,7 @@ export default function TheSchedule() {
   return (
     <section className="relative w-full max-w-7xl mx-auto px-4 md:px-8 text-slate-light">
       
-      <div className="relative z-10 bg-[#010408]/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)] p-6 md:p-12">
+      <div className="relative z-10 bg-[#08253d]/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)] p-6 md:p-12">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">

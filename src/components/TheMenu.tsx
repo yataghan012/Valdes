@@ -80,7 +80,7 @@ export default function TheMenu() {
   return (
     <section className="relative w-full max-w-7xl mx-auto px-4 md:px-8 text-slate-light">
       
-      <div className="relative z-10 bg-[#061626]/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)] p-6 md:p-12">
+      <div className="relative z-10 bg-[#0e4268]/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)] p-6 md:p-12">
         
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-16">
@@ -104,7 +104,7 @@ export default function TheMenu() {
           </div>
           <input
             type="text"
-            className="block w-full pl-12 pr-4 py-4 bg-[#0A1118]/80 border border-white/10 text-white font-mono text-sm placeholder:text-slate-light/30 focus:outline-none focus:border-copper/50 focus:ring-1 focus:ring-copper/50 transition-all backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
+            className="block w-full pl-12 pr-4 py-4 bg-[#08253d]/80 border border-white/10 text-white font-mono text-sm placeholder:text-slate-light/30 focus:outline-none focus:border-copper/50 focus:ring-1 focus:ring-copper/50 transition-all backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
             placeholder="Buscar en la base de datos (ej., 'Merluza', 'Barra de Crudos')..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -123,7 +123,7 @@ export default function TheMenu() {
               className={`px-6 py-2 font-mono text-xs uppercase tracking-widest border transition-all duration-300 ${
                 activeCategory === cat 
                   ? 'border-copper bg-copper/10 text-copper shadow-[0_0_15px_rgba(179,107,57,0.2)]' 
-                  : 'border-white/10 bg-[#0A1118]/50 text-slate-light/60 hover:bg-white/10 hover:text-white'
+                  : 'border-white/10 bg-[#08253d]/50 text-slate-light/60 hover:bg-white/10 hover:text-white'
               }`}
             >
               {cat}
@@ -142,7 +142,7 @@ export default function TheMenu() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 onClick={() => setSelectedItem(item)}
-                className="relative h-64 group overflow-hidden border border-white/10 bg-[#0A1118] cursor-pointer shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
+                className="relative h-64 group overflow-hidden border border-white/10 bg-[#08253d] cursor-pointer shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
               >
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
@@ -153,7 +153,7 @@ export default function TheMenu() {
                     referrerPolicy="no-referrer"
                   />
                   {/* Heavy gradient to ensure text readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/60 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#08253d] via-[#08253d]/60 to-transparent"></div>
                 </div>
 
                 {/* Card Content */}
@@ -164,7 +164,7 @@ export default function TheMenu() {
                     <span className="text-[10px] font-mono tracking-widest uppercase text-slate-light/90 border border-white/20 px-2 py-1 bg-black/40 backdrop-blur-md">
                       {item.category}
                     </span>
-                    <span className="text-lg font-mono font-bold text-copper bg-[#0A1118]/90 px-2 py-1 border border-copper/30 shadow-lg">
+                    <span className="text-lg font-mono font-bold text-copper bg-[#08253d]/90 px-2 py-1 border border-copper/30 shadow-lg">
                       {item.price}
                     </span>
                   </div>
@@ -210,7 +210,7 @@ export default function TheMenu() {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.95, opacity: 0, y: 20 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-5xl bg-[#0A1118] border border-white/10 shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[90vh] md:max-h-[600px]"
+              className="relative w-full max-w-5xl bg-[#08253d] border border-white/10 shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[90vh] md:max-h-[600px]"
             >
               {/* Close Button */}
               <button 
@@ -229,7 +229,7 @@ export default function TheMenu() {
                   referrerPolicy="no-referrer"
                 />
                 {/* Gradient to blend image into content on desktop */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-[#0A1118]"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#08253d] via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-[#08253d]"></div>
               </div>
 
               {/* Content Half */}

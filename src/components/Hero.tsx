@@ -51,12 +51,12 @@ export default function Hero() {
       >
         <video 
           ref={videoRef}
-src={`${import.meta.env.BASE_URL}ocean.mp4`}
+          src={`${import.meta.env.BASE_URL}ocean.mp4`} 
           autoPlay loop muted playsInline 
           className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
         />
         {/* Deep Oceanic Blue Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A243F]/80 to-transparent transition-colors duration-500"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#11517f]/80 to-transparent transition-colors duration-500"></div>
         
         {/* Weathered Map Overlay (Subtle Texture) */}
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/aged-paper.png')] opacity-10 mix-blend-overlay"></div>

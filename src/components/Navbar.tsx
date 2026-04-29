@@ -79,7 +79,7 @@ export default function Navbar() {
       className={`fixed left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${
         isAtTop 
           ? 'top-6 w-full max-w-7xl bg-transparent border-transparent px-6' 
-          : 'top-4 w-[95%] max-w-5xl bg-[#0A1118]/80 backdrop-blur-xl border border-white/10 rounded-full shadow-[0_10px_40px_rgba(0,0,0,0.5)] px-4 md:px-8'
+          : 'top-4 w-[95%] max-w-5xl bg-[#08253d]/80 backdrop-blur-xl border border-white/10 rounded-full shadow-[0_10px_40px_rgba(0,0,0,0.5)] px-4 md:px-8'
       }`}
     >
       <div className="flex justify-between items-center py-3">
@@ -90,7 +90,7 @@ export default function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <img 
-src={`${import.meta.env.BASE_URL}logo.png`}
+            src={`${import.meta.env.BASE_URL}logo.png`} 
             alt="Valdés Logo" 
             className="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-105 transition-transform duration-500" 
             referrerPolicy="no-referrer" 
@@ -127,7 +127,7 @@ src={`${import.meta.env.BASE_URL}logo.png`}
 
         {/* Right Side: Primary CTA Button */}
         <div className="hidden md:flex items-center gap-4 lg:gap-6">
-          <button className="relative group bg-[#0D151C] border-2 border-copper px-8 py-2.5 flex flex-col items-center justify-center transition-all duration-500 hover:bg-gradient-to-tr hover:from-[#0D151C] hover:via-[#1c2b3b] hover:to-[#0D151C] rounded-none shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+          <button className="relative group bg-[#0b3352] border-2 border-copper px-8 py-2.5 flex flex-col items-center justify-center transition-all duration-500 hover:bg-gradient-to-tr hover:from-[#0b3352] hover:via-[#11517f] hover:to-[#0b3352] rounded-none shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
             {/* Rivets */}
             <div className="absolute top-1.5 left-1.5 w-1 h-1 rounded-full bg-copper shadow-[inset_0_1px_1px_rgba(0,0,0,0.5)]"></div>
             <div className="absolute top-1.5 right-1.5 w-1 h-1 rounded-full bg-copper shadow-[inset_0_1px_1px_rgba(0,0,0,0.5)]"></div>
@@ -166,7 +166,7 @@ src={`${import.meta.env.BASE_URL}logo.png`}
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="md:hidden absolute top-full left-0 w-full mt-2 overflow-hidden"
           >
-            <div className="bg-[#0A1118]/95 backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex flex-col gap-6 shadow-2xl mx-2">
+            <div className="bg-[#08253d]/95 backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex flex-col gap-6 shadow-2xl mx-2">
               <div className="flex flex-col gap-4">
                 {NAV_LINKS.map((link) => {
                   const isActive = activeSection === link.id;
@@ -184,7 +184,7 @@ src={`${import.meta.env.BASE_URL}logo.png`}
                 })}
               </div>
               <div className="h-[1px] w-full bg-white/10"></div>
-              <button className="relative group w-full bg-[#0D151C] border-2 border-copper px-6 py-3 flex flex-col items-center justify-center transition-all duration-500 hover:bg-gradient-to-tr hover:from-[#0D151C] hover:via-[#1c2b3b] hover:to-[#0D151C] rounded-none shadow-[0_4px_20px_rgba(0,0,0,0.5)] mt-2">
+              <button className="relative group w-full bg-[#0b3352] border-2 border-copper px-6 py-3 flex flex-col items-center justify-center transition-all duration-500 hover:bg-gradient-to-tr hover:from-[#0b3352] hover:via-[#11517f] hover:to-[#0b3352] rounded-none shadow-[0_4px_20px_rgba(0,0,0,0.5)] mt-2">
                 {/* Rivets */}
                 <div className="absolute top-1.5 left-1.5 w-1 h-1 rounded-full bg-copper shadow-[inset_0_1px_1px_rgba(0,0,0,0.5)]"></div>
                 <div className="absolute top-1.5 right-1.5 w-1 h-1 rounded-full bg-copper shadow-[inset_0_1px_1px_rgba(0,0,0,0.5)]"></div>

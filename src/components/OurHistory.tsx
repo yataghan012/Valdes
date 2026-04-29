@@ -27,7 +27,7 @@ export default function OurHistory() {
   return (
     <section id="historia-nueva" className="relative w-full max-w-7xl mx-auto px-4 md:px-8 text-slate-light">
       
-      <div className="relative z-10 bg-[#061626]/40 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)] p-6 md:p-16 overflow-hidden">
+      <div className="relative z-10 bg-[#0e4268]/40 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)] p-6 md:p-16 overflow-hidden">
         
         {/* Background Texture */}
         <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-0">
@@ -63,7 +63,7 @@ export default function OurHistory() {
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#08253d] via-transparent to-transparent"></div>
                 
                 {/* Floating Quote Card */}
                 <motion.div 

@@ -17,7 +17,7 @@ export default function MaritimeTrace() {
     <section className="relative w-full max-w-7xl mx-auto px-4 md:px-8 text-slate-light flex flex-col">
       
       {/* --- PART 1: THE LOGISTICAL TRACE (Brickwork & Industrial) --- */}
-      <div className="relative w-full py-16 px-6 md:px-12 z-10 bg-[#030B14]/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)]" ref={containerRef}>
+      <div className="relative w-full py-16 px-6 md:px-12 z-10 bg-[#0b3352]/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)]" ref={containerRef}>
         {/* Brickwork Underlay (Parallax reveal effect via fixed attachment simulation) */}
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-brick-wall.png')] opacity-10 mix-blend-overlay pointer-events-none rounded-3xl"></div>
 
@@ -79,7 +79,7 @@ export default function MaritimeTrace() {
 
                   {/* Center Node */}
                   <div className="absolute left-0 md:left-1/2 -translate-x-0 md:-translate-x-1/2 flex items-center justify-center w-20 h-20">
-                    <div className={`w-14 h-14 rounded-full flex items-center justify-center border-4 border-trench relative z-20 ${step.highlight ? 'bg-coral shadow-[0_0_30px_rgba(255,126,103,0.4)]' : 'bg-[#1A2436] shadow-[0_0_20px_rgba(0,0,0,0.8)]'}`}>
+                    <div className={`w-14 h-14 rounded-full flex items-center justify-center border-4 border-trench relative z-20 ${step.highlight ? 'bg-coral shadow-[0_0_30px_rgba(255,126,103,0.4)]' : 'bg-[#11517f] shadow-[0_0_20px_rgba(0,0,0,0.8)]'}`}>
                       <step.icon className={`w-6 h-6 ${step.highlight ? 'text-trench' : 'text-copper'}`} />
                     </div>
                   </div>

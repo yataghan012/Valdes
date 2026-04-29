@@ -37,7 +37,7 @@ export default function TheRitual() {
   return (
     <section className="relative w-full max-w-7xl mx-auto px-4 md:px-8 text-slate-light">
       
-      <div className="relative w-full py-16 px-6 md:px-12 overflow-hidden bg-[#030B14]/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)]">
+      <div className="relative w-full py-16 px-6 md:px-12 overflow-hidden bg-[#0b3352]/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)]">
         
         {/* Background Whale Tail Sigil Watermark */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 opacity-[0.03] mix-blend-overlay">
@@ -76,7 +76,7 @@ export default function TheRitual() {
               <motion.div 
                 key={img.id}
                 variants={tileVariants}
-                className={`relative overflow-hidden group bg-[#0A1118] ${img.span}`}
+                className={`relative overflow-hidden group bg-[#08253d] ${img.span}`}
               >
                 <img 
                   src={img.src} 
@@ -85,7 +85,7 @@ export default function TheRitual() {
                   referrerPolicy="no-referrer"
                 />
                 {/* Instagram-style overlay on hover */}
-                <div className="absolute inset-0 bg-[#0A1118]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                <div className="absolute inset-0 bg-[#08253d]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
                   <Instagram className="w-8 h-8 text-white drop-shadow-lg" />
                 </div>
               </motion.div>

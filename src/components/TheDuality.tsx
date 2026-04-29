@@ -32,7 +32,7 @@ export default function TheDuality() {
 
   return (
     <section className="relative w-full max-w-7xl mx-auto px-4 md:px-8 text-slate-light">
-      <div className="relative w-full flex flex-col md:flex-row overflow-hidden bg-[#030B14]/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)] min-h-[80vh]">
+      <div className="relative w-full flex flex-col md:flex-row overflow-hidden bg-[#0b3352]/60 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)] min-h-[80vh]">
       
       {/* Center Divider Line */}
       <div className="absolute top-1/2 left-0 right-0 h-[1px] md:h-auto md:top-0 md:bottom-0 md:left-1/2 md:w-[1px] bg-white/10 z-20 pointer-events-none md:-translate-x-1/2 -translate-y-1/2 md:translate-y-0"></div>
@@ -66,7 +66,7 @@ export default function TheDuality() {
             );
           })}
           {/* Lighter gradient just for text readability at the bottom */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118]/90 via-[#0A1118]/30 to-transparent pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#08253d]/90 via-[#08253d]/30 to-transparent pointer-events-none"></div>
           {/* Overlay blend mode preserves brightness better than multiply */}
           <div className="absolute inset-0 bg-copper/10 mix-blend-overlay pointer-events-none"></div>
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-brick-wall.png')] opacity-20 mix-blend-overlay pointer-events-none"></div>
@@ -128,7 +128,7 @@ export default function TheDuality() {
             );
           })}
           {/* Lighter gradient just for text readability at the bottom */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118]/90 via-[#0A1118]/30 to-transparent pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#08253d]/90 via-[#08253d]/30 to-transparent pointer-events-none"></div>
           {/* Overlay blend mode preserves brightness better than multiply */}
           <div className="absolute inset-0 bg-blue-900/10 mix-blend-overlay pointer-events-none"></div>
         </div>
