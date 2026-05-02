@@ -89,7 +89,7 @@ export default function TheMenu() {
             <span className="text-xs font-mono tracking-[0.3em] text-copper uppercase font-bold">Fuente de Verdad</span>
             <Database className="w-4 h-4 text-copper" />
           </div>
-          <h2 className="text-5xl md:text-7xl font-brand font-bold text-white mb-6 salt-crust tracking-tighter">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-brand font-bold text-white mb-6 salt-crust tracking-tighter">
             TRANSPARENCIA
           </h2>
           <p className="max-w-2xl text-sm md:text-base text-slate-light/70 font-mono leading-relaxed">

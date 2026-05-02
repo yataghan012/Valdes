@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-3">
               <Anchor className="w-6 h-6 text-copper" />
-              <span className="text-2xl font-brand font-bold text-white tracking-tighter uppercase">Valdés</span>
+              <span className="text-2xl font-brand font-bold text-white tracking-tight uppercase">Valdés</span>
             </div>
             <p className="text-sm text-slate-light/50 font-mono leading-relaxed uppercase tracking-wider">
               Marítima Austral <br />

@@ -78,7 +78,7 @@ export default function TheDuality() {
             <MapPin className="w-5 h-5 text-copper" />
             <span className="text-xs font-mono tracking-[0.2em] text-copper uppercase">La Casona Histórica</span>
           </div>
-          <h2 className="text-5xl md:text-7xl font-brand font-bold text-white mb-4 tracking-tight whitespace-nowrap">Alta Córdoba</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-brand font-bold text-white mb-4 tracking-tight">Alta Córdoba</h2>
           
           <motion.div 
             initial={{ opacity: 0, height: 0 }}
@@ -139,7 +139,7 @@ export default function TheDuality() {
             <MapPin className="w-5 h-5 text-slate-light" />
             <span className="text-xs font-mono tracking-[0.2em] text-slate-light uppercase">El Ancla Moderna</span>
           </div>
-          <h2 className="text-5xl md:text-7xl font-brand font-bold text-white mb-4 tracking-tight whitespace-nowrap">Villa Belgrano</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-brand font-bold text-white mb-4 tracking-tight">Villa Belgrano</h2>
           
           <motion.div 
             initial={{ opacity: 0, height: 0 }}

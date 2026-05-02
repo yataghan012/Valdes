@@ -96,7 +96,7 @@ export default function Navbar() {
             referrerPolicy="no-referrer" 
           />
           <div className={`flex flex-col items-start transition-opacity duration-500 ${!isAtTop ? 'hidden lg:flex' : 'flex'}`}>
-            <span className="font-brand text-3xl md:text-4xl font-bold text-white tracking-tight leading-none">Valdés</span>
+            <span className="font-brand text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight py-1">Valdés</span>
             <span className="font-brand text-[9px] md:text-[10px] font-light tracking-[0.2em] uppercase text-slate-300 mt-1">
               Restó & Marisquería
             </span>
@@ -127,7 +127,7 @@ export default function Navbar() {
 
         {/* Right Side: Primary CTA Button */}
         <div className="hidden md:flex items-center gap-4 lg:gap-6">
-          <button className="relative group bg-[#0b3352] border-2 border-copper px-8 py-2.5 flex flex-col items-center justify-center transition-all duration-500 hover:bg-gradient-to-tr hover:from-[#0b3352] hover:via-[#11517f] hover:to-[#0b3352] rounded-none shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+          <button onClick={() => scrollToSection('sucursales')} className="relative group bg-[#0b3352] border-2 border-copper px-8 py-2.5 flex flex-col items-center justify-center transition-all duration-500 hover:bg-gradient-to-tr hover:from-[#0b3352] hover:via-[#11517f] hover:to-[#0b3352] rounded-none shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
             {/* Rivets */}
             <div className="absolute top-1.5 left-1.5 w-1 h-1 rounded-full bg-copper shadow-[inset_0_1px_1px_rgba(0,0,0,0.5)]"></div>
             <div className="absolute top-1.5 right-1.5 w-1 h-1 rounded-full bg-copper shadow-[inset_0_1px_1px_rgba(0,0,0,0.5)]"></div>
@@ -184,7 +184,7 @@ export default function Navbar() {
                 })}
               </div>
               <div className="h-[1px] w-full bg-white/10"></div>
-              <button className="relative group w-full bg-[#0b3352] border-2 border-copper px-6 py-3 flex flex-col items-center justify-center transition-all duration-500 hover:bg-gradient-to-tr hover:from-[#0b3352] hover:via-[#11517f] hover:to-[#0b3352] rounded-none shadow-[0_4px_20px_rgba(0,0,0,0.5)] mt-2">
+              <button onClick={() => scrollToSection('sucursales')} className="relative group w-full bg-[#0b3352] border-2 border-copper px-6 py-3 flex flex-col items-center justify-center transition-all duration-500 hover:bg-gradient-to-tr hover:from-[#0b3352] hover:via-[#11517f] hover:to-[#0b3352] rounded-none shadow-[0_4px_20px_rgba(0,0,0,0.5)] mt-2">
                 {/* Rivets */}
                 <div className="absolute top-1.5 left-1.5 w-1 h-1 rounded-full bg-copper shadow-[inset_0_1px_1px_rgba(0,0,0,0.5)]"></div>
                 <div className="absolute top-1.5 right-1.5 w-1 h-1 rounded-full bg-copper shadow-[inset_0_1px_1px_rgba(0,0,0,0.5)]"></div>

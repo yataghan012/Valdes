@@ -55,7 +55,7 @@ export default function TheRitual() {
               <span className="text-xs font-mono tracking-[0.3em] text-copper uppercase font-bold">Abundancia Democrática</span>
               <div className="h-[1px] w-12 bg-copper"></div>
             </div>
-            <h2 className="text-5xl md:text-7xl font-brand font-bold text-white mb-6 salt-crust tracking-tighter">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-brand font-bold text-white mb-6 salt-crust tracking-tighter">
               EL RITUAL
             </h2>
             <p className="max-w-2xl text-lg text-slate-light/70 font-light leading-relaxed">

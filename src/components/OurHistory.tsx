@@ -25,7 +25,7 @@ const TEAM_MEMBERS = [
 
 export default function OurHistory() {
   return (
-    <section id="historia-nueva" className="relative w-full max-w-7xl mx-auto px-4 md:px-8 text-slate-light">
+    <section className="relative w-full max-w-7xl mx-auto px-4 md:px-8 text-slate-light">
       
       <div className="relative z-10 bg-[#0e4268]/40 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.5)] p-6 md:p-16 overflow-hidden">
         
@@ -42,7 +42,7 @@ export default function OurHistory() {
                 <History className="w-5 h-5 text-copper" />
                 <span className="text-xs font-mono tracking-[0.3em] text-copper uppercase font-bold">Desde 1994</span>
               </div>
-              <h2 className="text-5xl md:text-7xl font-brand font-bold text-white mb-8 leading-[0.9] tracking-tighter salt-crust">
+              <h2 className="text-4xl md:text-5xl lg:text-7xl font-brand font-bold text-white mb-8 leading-[0.9] tracking-tighter salt-crust">
                 NUESTRA <br/> HISTORIA
               </h2>
               <div className="space-y-6 text-lg text-slate-light/70 font-light leading-relaxed">

@@ -63,7 +63,7 @@ export default function TheSchedule() {
               <Calendar className="w-5 h-5 text-copper" />
               <span className="text-xs font-mono tracking-[0.3em] text-copper uppercase font-bold">Agenda Social</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-brand font-bold text-white leading-[0.9] tracking-tighter salt-crust">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-brand font-bold text-white leading-[0.9] tracking-tighter salt-crust">
               EL MANIFIESTO
             </h2>
           </div>

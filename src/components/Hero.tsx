@@ -19,13 +19,26 @@ export default function Hero() {
   const opacityPlatter = useTransform(scrollY, [0, 600], [1, 0]);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.defaultMuted = true;
-      videoRef.current.muted = true;
-      const playPromise = videoRef.current.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => setAutoplayFailed(true));
-      }
+    const video = videoRef.current;
+    if (video) {
+        // Enforce muted state for autoplay compliance
+        video.muted = true;
+        video.defaultMuted = true;
+        
+        const attemptPlay = () => {
+            video.play().then(() => {
+                setAutoplayFailed(false);
+            }).catch((error) => {
+                console.warn("Autoplay blocked or failed:", error);
+                setAutoplayFailed(true);
+            });
+        };
+
+        attemptPlay();
+
+        // Fallback for some browsers that require a slight delay
+        const timeoutId = setTimeout(attemptPlay, 1000);
+        return () => clearTimeout(timeoutId);
     }
   }, []);
 
@@ -65,20 +78,10 @@ export default function Hero() {
       {/* Content Layer */}
       <div className="relative z-20 w-full max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
         
-        {/* Lighthouse Micro-Interaction */}
-        <motion.div style={{ y: yText }} className="flex items-center gap-3 mb-4 md:mb-6">
-          <div className="relative flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-coral opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-coral shadow-[0_0_12px_#FF7E67]"></span>
-          </div>
-          <span className="text-xs font-mono tracking-[0.2em] text-slate-light/80 uppercase">
-            {autoplayFailed ? "Esperando Entrada" : "En Vivo: Costa Patagónica"}
-          </span>
-        </motion.div>
 
         {/* Oversized Typography */}
         <motion.div style={{ y: yText }} className="flex flex-col items-center z-10">
-          <h1 className="text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[10rem] font-brand font-bold leading-[0.85] tracking-tighter text-white salt-crust mb-4">
+          <h1 className="text-[4rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[10rem] font-brand font-bold leading-[1.1] tracking-tight text-white salt-crust mb-4 py-2">
             VALDÉS
           </h1>
           <div className="flex items-center gap-6 w-full max-w-3xl">

@@ -30,7 +30,7 @@ export default function MaritimeTrace() {
                 <div className="h-[2px] w-16 bg-copper shadow-[0_0_10px_rgba(179,107,57,0.5)]"></div>
                 <span className="text-xs font-mono tracking-[0.3em] text-copper uppercase font-bold">Autoridad Logística</span>
               </div>
-              <h2 className="text-5xl md:text-7xl font-brand font-bold text-white leading-[0.9] tracking-tighter salt-crust">
+              <h2 className="text-4xl md:text-5xl lg:text-7xl font-brand font-bold text-white leading-[0.9] tracking-tighter salt-crust">
                 EL RASTREO <br/> MARÍTIMO
               </h2>
             </div>
