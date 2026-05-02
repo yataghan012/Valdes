@@ -40,9 +40,9 @@ export default function Footer() {
               <span className="text-2xl font-brand font-bold text-white tracking-tight uppercase">Valdés</span>
             </div>
             <p className="text-sm text-slate-light/50 font-mono leading-relaxed uppercase tracking-wider">
-              Marítima Austral <br />
-              Sustituto Costero <br />
-              Est. 2024
+              Especialistas en tablas de mar. <br />
+              Alta Córdoba & Villa Belgrano. <br />
+              Desde 1994.
             </p>
             <div className="flex gap-4 mt-2">
               <a href="#" className="text-slate-light/40 hover:text-copper transition-colors"><Instagram className="w-5 h-5" /></a>
@@ -91,7 +91,7 @@ export default function Footer() {
               <button onClick={() => setModalType('protocol')} className="block text-sm text-slate-light/50 hover:text-white font-mono uppercase tracking-widest transition-colors text-left">Transparencia</button>
               <div className="pt-4 flex items-center gap-3">
                 <Mail className="w-4 h-4 text-slate-light/30" />
-                <span className="text-sm text-slate-light/70 font-mono">logistica@valdes.com</span>
+                <span className="text-sm text-slate-light/70 font-mono">[REEMPLAZAR CON EMAIL REAL DEL RESTAURANTE]</span>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-[10px] font-mono text-slate-light/20 uppercase tracking-[0.2em]">
-            © 2026 Valdés Marítima Austral. Todos los derechos reservados.
+            © 2026 Valdés Restó & Marisquería. Todos los derechos reservados.
           </div>
           <div className="flex gap-8 text-[10px] font-mono text-slate-light/20 uppercase tracking-[0.2em]">
             <button onClick={() => setModalType('privacy')} className="hover:text-slate-light/40 transition-colors">Política_de_Privacidad</button>

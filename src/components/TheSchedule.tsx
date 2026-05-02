@@ -6,7 +6,7 @@ const SCHEDULE_DATA = [
   {
     day: "MARTES",
     event: "Sushi & Omakase",
-    desc: "Degustación exclusiva de 12 pasos con los ingresos más frescos del Pacífico.",
+    desc: "Doce pasos. Ingredientes del día. Una mesa para los que quieren algo distinto.",
     branch: "Solo Villa Belgrano",
     status: "Cupos Limitados",
     statusColor: "text-coral",
@@ -15,7 +15,7 @@ const SCHEDULE_DATA = [
   {
     day: "MIÉRCOLES",
     event: "Mujeres del Mar",
-    desc: "Noche de Mujeres. 50% de descuento en cócteles seleccionados y tablas premium para compartir.",
+    desc: "Miércoles para ellas. 50% en cócteles y las mejores tablas para compartir.",
     branch: "Alta Córdoba",
     status: "Disponible",
     statusColor: "text-copper",
@@ -24,7 +24,7 @@ const SCHEDULE_DATA = [
   {
     day: "JUEVES",
     event: "Maridaje Patagónico",
-    desc: "Un menú de 5 pasos maridado con vinos boutique de altura.",
+    desc: "Cinco pasos. Vinos de altura. El mar y la montaña en la misma mesa.",
     branch: "Ambas Sucursales",
     status: "Disponible",
     statusColor: "text-copper",
@@ -33,7 +33,7 @@ const SCHEDULE_DATA = [
   {
     day: "VIERNES",
     event: "La Pesca Fresca",
-    desc: "Llega el cargamento principal de 48hs. Primer acceso a los cortes más exclusivos.",
+    desc: "Llega el cargamento del sur. Los primeros en acceder a lo mejor de la semana.",
     branch: "Ambas Sucursales",
     status: "Alta Demanda",
     statusColor: "text-coral",
@@ -68,7 +68,7 @@ export default function TheSchedule() {
             </h2>
           </div>
           <p className="max-w-sm text-sm text-slate-light/60 font-mono leading-relaxed border-l border-copper/30 pl-6">
-            Nuestro ritmo semanal. Asegurá tu mesa con tiempo para eventos de alta demanda y la llegada de mercadería fresca.
+            Nuestro ritmo semanal. Reservá con anticipación — los jueves y viernes se llenan primero.
           </p>
         </div>
 
@@ -92,6 +92,7 @@ export default function TheSchedule() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                onClick={() => window.open('https://valdesmarisqueria.wokiapp.com/', '_blank')}
                 className="group relative grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-4 px-8 md:px-12 py-8 border-b border-[#1A1A1A] last:border-b-0 hover:bg-white/[0.03] transition-colors duration-500 cursor-pointer overflow-hidden"
               >
                 {/* Hover Glow Effect */}

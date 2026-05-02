@@ -90,7 +90,7 @@ export default function TheDuality() {
             className="overflow-hidden"
           >
             <p className="text-slate-light/80 font-light mb-8 text-lg leading-relaxed">
-              Calidez, acústica y ladrillo a la vista. El ancla marítima original en el corazón de la ciudad. Ideal para cenas íntimas y largas conversaciones.
+              Ladrillo a la vista, pisos de pinotea, el patio con la ballena. El lugar donde Córdoba come el sur desde hace décadas. Para los cumpleaños, los domingos, las charlas que no tienen apuro.
             </p>
             <button className="flex items-center gap-3 text-white font-mono text-sm uppercase tracking-widest hover:text-copper transition-colors">
               Explorar Sucursal <ArrowRight className="w-4 h-4" />
@@ -151,7 +151,7 @@ export default function TheDuality() {
             className="overflow-hidden"
           >
             <p className="text-slate-light/80 font-light mb-8 text-lg leading-relaxed">
-              Elegante, minimalista y de gran energía. Una versión arquitectónica moderna de los refugios de pesca patagónicos. Ideal para reuniones grandes y noches vibrantes.
+              Líneas limpias, materiales industriales, otro ritmo. Para cuando el plan es diferente pero el estándar tiene que ser el mismo.
             </p>
             <button className="flex items-center gap-3 text-white font-mono text-sm uppercase tracking-widest hover:text-slate-light/70 transition-colors">
               Explorar Sucursal <ArrowRight className="w-4 h-4" />

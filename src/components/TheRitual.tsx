@@ -59,8 +59,7 @@ export default function TheRitual() {
               EL RITUAL
             </h2>
             <p className="max-w-2xl text-lg text-slate-light/70 font-light leading-relaxed">
-              La experiencia de "Diente Libre" es más que una comida; es una celebración de la costa. 
-              Sin límites, sin pretensiones. Solo una marea interminable de sabor patagónico.
+              Los jueves en Valdés son otra cosa. Diente Libre significa exactamente eso: langostinos, mejillones, salmón patagónico. Sin límite de cantidad, sin pretensiones. Solo el mar, en mesa.
             </p>
           </div>
 

@@ -28,14 +28,14 @@ export default function MaritimeTrace() {
             <div className="max-w-2xl">
               <div className="flex items-center gap-4 mb-6">
                 <div className="h-[2px] w-16 bg-copper shadow-[0_0_10px_rgba(179,107,57,0.5)]"></div>
-                <span className="text-xs font-mono tracking-[0.3em] text-copper uppercase font-bold">Autoridad Logística</span>
+                <span className="text-xs font-mono tracking-[0.3em] text-copper uppercase font-bold">Cadena de Frío</span>
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-7xl font-brand font-bold text-white leading-[0.9] tracking-tighter salt-crust">
                 EL RASTREO <br/> MARÍTIMO
               </h2>
             </div>
             <p className="max-w-md text-sm md:text-base text-slate-light/60 font-mono leading-relaxed border-l border-copper/30 pl-6">
-              Trasladamos la carga de la prueba de la opinión a la logística. Seguí el viaje de 48 horas de la cadena de frío desde las aguas profundas de la Patagonia directamente a Córdoba.
+              El pescado no miente. Seguí el viaje de 48 horas desde Puerto Rawson hasta tu mesa en Córdoba.
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export default function MaritimeTrace() {
               
               {[
                 { time: "00:00", title: "La Pesca", loc: "Puerto Rawson, Chubut", desc: "Los barcos de alta mar descargan la pesca de la mañana directamente en los muelles.", icon: Fish, align: "right", img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80", rot: 3 },
-                { time: "04:00", title: "Procesamiento", loc: "Planta Costera", desc: "Limpieza inmediata y enfriamiento rápido para sellar el sabor oceánico.", icon: Anchor, align: "left", img: "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=800&q=80", rot: -2 },
+                { time: "04:00", title: "Procesamiento", loc: "Planta Costera", desc: "Limpieza y enfriamiento inmediato. A 2°C desde el primer minuto.", icon: Anchor, align: "left", img: "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=800&q=80", rot: -2 },
                 { time: "12:00", title: "Cadena de Frío", loc: "Ruta 3 hacia el Norte", desc: "El transporte térmico especializado mantiene un entorno estricto de 2°C.", icon: Truck, align: "right", img: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=800&q=80", rot: 2 },
                 { time: "48:00", title: "La Llegada", loc: "Valdés, Córdoba", desc: "Emplatado y servido. La brecha de 1.000 km, acortada al instante.", icon: MapPin, align: "left", highlight: true, img: "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80", rot: -3 }
               ].map((step, i) => (

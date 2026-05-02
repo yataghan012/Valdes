@@ -7,19 +7,19 @@ const TEAM_MEMBERS = [
     name: "Ricardo Valdés",
     role: "Fundador & Capitán",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-    desc: "30 años de experiencia en la industria pesquera de Rawson."
+    desc: "Tres décadas conectando la Patagonia con las mesas cordobesas."
   },
   {
     name: "Elena Martínez",
     role: "Chef Ejecutiva",
     image: "https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=400&q=80",
-    desc: "Especialista en cocina de mar y técnicas de conservación."
+    desc: "Especialista en cocina de mar y en que cada plato justifique el viaje."
   },
   {
     name: "Julián Valdés",
     role: "Director de Logística",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
-    desc: "Responsable de que la mercadería llegue en 48hs a Córdoba."
+    desc: "El responsable de que el pescado llegue en 48hs y a 2°C."
   }
 ];
 
@@ -47,10 +47,10 @@ export default function OurHistory() {
               </h2>
               <div className="space-y-6 text-lg text-slate-light/70 font-light leading-relaxed">
                 <p>
-                  Todo comenzó en los muelles de Puerto Rawson. Lo que nació como una pequeña empresa familiar de logística pesquera, se transformó en una misión: acortar la distancia entre el Atlántico y el corazón de Argentina.
+                  Empezamos en los muelles de Rawson. Lo que arrancó como logística familiar de pesca se convirtió en una obsesión: que Córdoba tenga acceso al mejor marisco del Atlántico Sur sin que nadie tenga que viajar 1.000 km para probarlo.
                 </p>
                 <p>
-                  En Valdés, no solo servimos comida; servimos un compromiso. El compromiso de que el pescado que disfrutas hoy en Córdoba fue descargado hace menos de 48 horas en la costa chubutense.
+                  El pescado que comés hoy en nuestra mesa fue descargado hace menos de 48 horas en la costa chubutense. No es marketing. Es nuestra cadena de frío. Es nuestro único estándar.
                 </p>
               </div>
             </div>

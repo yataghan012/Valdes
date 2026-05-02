@@ -4,9 +4,9 @@ export default function TelemetryGrid() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
       {[
-        { label: 'Vessel Alpha', status: 'En Route', value: '45.2° N, 12.4° W', alert: false },
-        { label: 'Trench Probe', status: 'Offline', value: 'ERR_CONNECTION', alert: true },
-        { label: 'Coastal Hub', status: 'Active', value: 'Processing', alert: false },
+        { label: 'Envíos Esta Semana', status: 'En Ruta', value: '3 cargamentos activos', alert: false },
+        { label: 'Temperatura de Cadena', status: 'Óptimo', value: '2°C — Controlado', alert: true },
+        { label: 'Reservas', status: 'Disponible', value: 'Consultá por Woki', alert: false },
       ].map((item, i) => (
         <div 
           key={i} 

@@ -86,14 +86,14 @@ export default function TheMenu() {
         <div className="flex flex-col items-center text-center mb-16">
           <div className="flex items-center gap-4 mb-6">
             <Database className="w-4 h-4 text-copper" />
-            <span className="text-xs font-mono tracking-[0.3em] text-copper uppercase font-bold">Fuente de Verdad</span>
+            <span className="text-xs font-mono tracking-[0.3em] text-copper uppercase font-bold">Lo que Entra Hoy</span>
             <Database className="w-4 h-4 text-copper" />
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-brand font-bold text-white mb-6 salt-crust tracking-tighter">
-            TRANSPARENCIA
+            EL MENÚ
           </h2>
           <p className="max-w-2xl text-sm md:text-base text-slate-light/70 font-mono leading-relaxed">
-            Precios de mercado en vivo. Directo de los barcos a nuestra base de datos centralizada. Sin cargos ocultos, sin misterios de precios.
+            Precios actualizados. Lo que entra de Patagonia, lo que sale de nuestra cocina. Sin vueltas, sin sorpresas.
           </p>
         </div>
 
@@ -105,12 +105,12 @@ export default function TheMenu() {
           <input
             type="text"
             className="block w-full pl-12 pr-4 py-4 bg-[#08253d]/80 border border-white/10 text-white font-mono text-sm placeholder:text-slate-light/30 focus:outline-none focus:border-copper/50 focus:ring-1 focus:ring-copper/50 transition-all backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
-            placeholder="Buscar en la base de datos (ej., 'Merluza', 'Barra de Crudos')..."
+            placeholder="Buscá un plato o categoría..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
           <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
-            <span className="text-[10px] font-mono text-slate-light/20 uppercase tracking-widest">Consulta_Activa</span>
+            <span className="text-[10px] font-mono text-slate-light/20 uppercase tracking-widest">Búsqueda_Activa</span>
           </div>
         </div>
 
@@ -188,7 +188,7 @@ export default function TheMenu() {
           ) : (
             <div className="col-span-full py-12 flex flex-col items-center justify-center text-slate-light/40 font-mono text-sm">
               <Database className="w-8 h-8 mb-4 opacity-20" />
-              <p>No se encontraron registros para "{searchQuery}"</p>
+              <p>No encontramos "{searchQuery}" en el menú</p>
             </div>
           )}
         </div>
@@ -258,8 +258,11 @@ export default function TheMenu() {
                 </p>
 
                 {/* Modal CTA */}
-                <button className="self-start wet-stone-btn px-8 py-3 border border-copper/40 text-white font-sans font-medium tracking-[0.2em] uppercase text-xs transition-all flex items-center gap-2 group">
-                  <span>Agregar al Pedido</span>
+                <button 
+                  onClick={() => window.open('https://valdesmarisqueria.wokiapp.com/', '_blank')}
+                  className="self-start wet-stone-btn px-8 py-3 border border-copper/40 text-white font-sans font-medium tracking-[0.2em] uppercase text-xs transition-all flex items-center gap-2 group"
+                >
+                  <span>Reservar Mesa</span>
                   <div className="w-1 h-1 rounded-full bg-copper group-hover:bg-white transition-colors"></div>
                 </button>
               </div>

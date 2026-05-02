@@ -87,7 +87,7 @@ export default function Hero() {
           <div className="flex items-center gap-6 w-full max-w-3xl">
             <div className="h-[1px] flex-grow bg-gradient-to-r from-transparent via-copper/50 to-transparent"></div>
             <h2 className="text-xs md:text-sm lg:text-base font-sans font-light tracking-[0.4em] uppercase text-slate-light/90">
-              El Sustituto Costero
+              La Costa en el Corazón de Córdoba
             </h2>
             <div className="h-[1px] flex-grow bg-gradient-to-r from-transparent via-copper/50 to-transparent"></div>
           </div>
@@ -125,24 +125,10 @@ export default function Hero() {
         {/* Primary CTA */}
         <motion.div style={{ y: yText }} className="relative z-40 mt-[-2rem] md:mt-[-5rem]">
           <button 
-            onClick={() => {
-              const el = document.getElementById('menu');
-              if (el) {
-                const offset = 100;
-                const bodyRect = document.body.getBoundingClientRect().top;
-                const elementRect = el.getBoundingClientRect().top;
-                const elementPosition = elementRect - bodyRect;
-                const offsetPosition = elementPosition - offset;
-
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: 'smooth'
-                });
-              }
-            }}
+            onClick={() => window.open('https://valdesmarisqueria.wokiapp.com/', '_blank')}
             className="wet-stone-btn group relative px-12 py-6 border border-copper/40 text-white font-sans font-medium tracking-[0.2em] uppercase text-sm transition-all overflow-hidden pointer-events-auto"
           >
-            <span className="relative z-10 drop-shadow-md">Explorar el Menú</span>
+            <span className="relative z-10 drop-shadow-md">Reservá tu Mesa</span>
             
             {/* Wet-stone shine sweep */}
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out"></div>
